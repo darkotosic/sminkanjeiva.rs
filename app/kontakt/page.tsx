@@ -2,6 +2,7 @@ import { PageHero } from '@/components/sections/page-hero';
 import { faqItems } from '@/data/faq';
 import { site } from '@/data/site';
 import { FaqItem } from '@/components/ui/faq-item';
+import { BookingInquiryForm } from '@/components/forms/booking-inquiry-form';
 
 export const metadata = {
   title: 'Kontakt i zakazivanje',
@@ -25,18 +26,7 @@ export default function KontaktPage() {
           </div>
           <div className="card">
             <h2>Booking / inquiry forma</h2>
-            <form name="booking-inquiry" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/kontakt?hvala=1">
-              <input type="hidden" name="form-name" value="booking-inquiry" />
-              <p hidden><label>Ne popunjavaj: <input name="bot-field" /></label></p>
-              <p><label>Ime i prezime <input name="name" required /></label></p>
-              <p><label>Telefon <input name="phone" required /></label></p>
-              <p><label>Email <input name="email" type="email" /></label></p>
-              <p><label>Usluga <input name="service" /></label></p>
-              <p><label>Datum događaja <input name="eventDate" type="date" /></label></p>
-              <p><label>Poruka <textarea name="message" rows={4} required /></label></p>
-              <button type="submit">Pošalji upit</button>
-            </form>
-            <p style={{ color: 'var(--muted)' }}>Fallback: ako forma ne prođe, pošaljite email na {site.email} ili pozovite {site.phone}.</p>
+            <BookingInquiryForm />
           </div>
         </div>
       </section>
