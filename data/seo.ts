@@ -6,7 +6,7 @@ export const seoByRoute: Record<string, { title: string; description: string; ca
   },
   '/o-nama': {
     title: 'O nama',
-    description: 'Upoznajte pristup, iskustvo i profesionalne standarde Atelje Eva beauty studija.',
+    description: 'Upoznajte pristup, iskustvo i profesionalne standarde Atelje Iva beauty studija.',
     canonical: '/o-nama',
   },
   '/usluge': {

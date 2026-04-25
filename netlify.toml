@@ -6,8 +6,8 @@
   package = "@netlify/plugin-nextjs"
 
 [[redirects]]
-  from = "http://atelje-eva.rs/*"
-  to = "https://www.atelje-eva.rs/:splat"
+  from = "http://atelje-iva.rs/*"
+  to = "https://www.atelje-iva.rs/:splat"
   status = 301
   force = true
 

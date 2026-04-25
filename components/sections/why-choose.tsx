@@ -13,7 +13,7 @@ export function WhyChoose() {
   return (
     <section className="section">
       <div className="container">
-        <SectionHeading title="Zašto klijentkinje biraju Atelje Eva" subtitle="Svaki makeup look planiran je tako da bude postojan, prilagođen i pouzdan kada je najvažnije." />
+        <SectionHeading title="Zašto klijentkinje biraju Atelje Iva" subtitle="Svaki makeup look planiran je tako da bude postojan, prilagođen i pouzdan kada je najvažnije." />
         <div className="grid grid-3">
           {points.map((point) => <div key={point} className="card">{point}</div>)}
         </div>
