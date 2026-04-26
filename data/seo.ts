@@ -1,7 +1,7 @@
 export const seoByRoute: Record<string, { title: string; description: string; canonical: string }> = {
   '/': {
-    title: 'Profesionalna šminka u Novom Sadu',
-    description: 'Premium makeup studio za venčanja, događaje i posebne prilike. Zakažite termin brzo i jednostavno.',
+    title: 'Profesionalna šminka u Rumi | teren Beograd i Novi Sad',
+    description: 'Premium makeup studio sa centralnom lokacijom u Rumi i radom na terenu u Beogradu i Novom Sadu. Zakažite termin brzo i jednostavno.',
     canonical: '/',
   },
   '/o-nama': {

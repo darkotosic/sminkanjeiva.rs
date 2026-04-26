@@ -1,13 +1,13 @@
 export const site = {
   brandName: 'Atelje Iva',
-  city: 'Novi Sad',
-  phone: '+381 60 123 4567',
+  city: 'Ruma',
+  phone: '+38162462004',
   email: 'booking@atelje-iva.rs',
   instagramUrl: 'https://instagram.com/ateljeiva',
-  address: 'Bulevar Oslobođenja 120, Novi Sad',
+  address: 'Ruma (centralna lokacija) • rad na terenu u Beogradu i Novom Sadu',
   workingHours: 'Pon–Sub 08:00–20:00, nedeljom po dogovoru',
   heroHeadline:
-    'Atelje Iva — profesionalna šminka za venčanja, događaje i posebne prilike u Novom Sadu',
+    'Atelje Iva — profesionalna šminka u Rumi, sa radom na terenu u Beogradu i Novom Sadu',
   heroText:
     'Kreiramo pažljivo prilagođene makeup look-ove koji traju, izgledaju besprekorno na fotografijama i prate vaš stil, ten i energiju događaja.',
   bookingUrl: '/kontakt',
