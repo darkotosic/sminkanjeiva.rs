@@ -1,6 +1,6 @@
 import { TrustItem } from '@/components/ui/trust-item';
 
-const items = ['[10+] godina iskustva', '[900+] zadovoljnih klijentkinja', 'Profesionalni i higijenski standardi', 'Premium makeup proizvodi', 'Novi Sad studio / izlazak na teren'];
+const items = ['[10+] godina iskustva', '[900+] zadovoljnih klijentkinja', 'Profesionalni i higijenski standardi', 'Premium makeup proizvodi', 'Ruma centralno / teren Beograd i Novi Sad'];
 
 export function TrustStrip() {
   return (
