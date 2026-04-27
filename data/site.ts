@@ -12,7 +12,7 @@ export const site = {
     'Kreiramo pažljivo prilagođene makeup look-ove koji traju, izgledaju besprekorno na fotografijama i prate vaš stil, ten i energiju događaja.',
   bookingUrl: '/kontakt',
   contactPath: '/kontakt',
-  canonicalDomain: 'https://www.atelje-iva.rs',
+  canonicalDomain: 'https://sminkanjeiva.rs',
 };
 
 export const primaryNav = [
