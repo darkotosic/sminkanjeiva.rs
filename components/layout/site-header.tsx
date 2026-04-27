@@ -1,15 +1,24 @@
+'use client';
+
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { primaryNav, site } from '@/data/site';
 import { Button } from '@/components/ui/button';
 
 export function SiteHeader() {
+  const pathname = usePathname();
+
   return (
-    <header style={{ position: 'sticky', top: 0, background: 'rgba(248,245,241,0.96)', borderBottom: '1px solid var(--border)', zIndex: 20 }}>
-      <div className="container" style={{ display: 'flex', gap: '1rem', alignItems: 'center', justifyContent: 'space-between', padding: '0.75rem 0' }}>
-        <Link href="/" style={{ fontFamily: 'Georgia, serif', fontSize: '1.25rem' }}>{site.brandName}</Link>
-        <nav style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', justifyContent: 'end' }}>
+    <header className="site-header">
+      <div className="container site-header-row">
+        <Link href="/" className="site-brand" aria-label={`${site.brandName} početna strana`}>
+          {site.brandName}
+        </Link>
+        <nav className="site-nav" aria-label="Glavna navigacija">
           {primaryNav.map((item) => (
-            <Link key={item.href} href={item.href}>{item.label}</Link>
+            <Link key={item.href} href={item.href} className="site-nav-link" aria-current={pathname === item.href ? 'page' : undefined}>
+              {item.label}
+            </Link>
           ))}
           <Button href={site.bookingUrl}>Zakaži termin</Button>
         </nav>
