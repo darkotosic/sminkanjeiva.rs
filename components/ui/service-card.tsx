@@ -6,8 +6,12 @@ export function ServiceCard({ service }: { service: Service }) {
     <article className="card">
       <h3>{service.title}</h3>
       <p style={{ color: 'var(--muted)' }}>{service.shortDescription}</p>
-      <p><strong>{service.priceLabel}</strong></p>
-      <Button href={`/usluge/${service.slug}`} variant="secondary">Saznaj više</Button>
+      <p style={{ marginBottom: '1.1rem' }}>
+        <strong>{service.priceLabel}</strong>
+      </p>
+      <Button href={`/usluge/${service.slug}`} variant="secondary">
+        Saznaj više
+      </Button>
     </article>
   );
 }
