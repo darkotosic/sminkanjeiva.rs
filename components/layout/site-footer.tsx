@@ -21,16 +21,14 @@ export function SiteFooter() {
               ))}
             </ul>
           </nav>
-          <section aria-label="Društvene mreže">
-            <h3>Društvene mreže</h3>
-            <p>
-              <a href={site.instagramUrl} target="_blank" rel="noreferrer noopener">
-                Instagram
-              </a>
-            </p>
-            <p>
-              <Link href="/kontakt">Kontakt</Link>
-            </p>
+          <section aria-label="SEO lokacije i usluge">
+            <h3>Najtraženije stranice</h3>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: '0.3rem' }}>
+              <li><Link href="/sminkanje-ruma">Šminkanje Ruma</Link></li>
+              <li><Link href="/sminkanje-beograd">Šminkanje Beograd</Link></li>
+              <li><Link href="/sminkanje-novi-sad">Šminkanje Novi Sad</Link></li>
+              <li><Link href="/sminkanje-za-vencanje">Šminkanje za venčanje</Link></li>
+            </ul>
           </section>
         </div>
         <small>

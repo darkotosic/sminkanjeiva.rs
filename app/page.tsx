@@ -23,6 +23,18 @@ export default function HomePage() {
       <BookingCta />
       <FaqPreview />
       <ContactBlock />
+
+      <section className="section" style={{ paddingTop: 0 }}>
+        <div className="container card">
+          <h2>Najtraženije lokacije i termini</h2>
+          <p>
+            Izdvojene stranice za lokalne upite: <a href="/sminkanje-ruma">šminkanje Ruma</a>,{' '}
+            <a href="/sminkanje-beograd">šminkanje Beograd</a>, <a href="/sminkanje-novi-sad">šminkanje Novi Sad</a>,{' '}
+            <a href="/sminkanje-za-vencanje">šminkanje za venčanje</a> i{' '}
+            <a href="/sminkanje-za-decije-rodjendane">šminkanje za dečije rođendane</a>.
+          </p>
+        </div>
+      </section>
     </>
   );
 }
