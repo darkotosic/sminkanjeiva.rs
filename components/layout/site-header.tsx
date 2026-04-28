@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { primaryNav, site } from '@/data/site';
 import { Button } from '@/components/ui/button';
+import { LanguageToggle } from '@/components/layout/language-toggle';
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -20,6 +21,7 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
+          <LanguageToggle />
           <Button href={site.bookingUrl}>Zakaži termin</Button>
         </nav>
       </div>

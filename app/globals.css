@@ -332,3 +332,37 @@ p {
     transition: none;
   }
 }
+
+.language-toggle {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--foreground);
+  padding: 0.48rem 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.language-toggle:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+#google_translate_element {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.goog-te-banner-frame.skiptranslate,
+.goog-te-gadget-icon,
+.goog-logo-link,
+.goog-te-gadget span {
+  display: none !important;
+}
+
+body {
+  top: 0 !important;
+}
