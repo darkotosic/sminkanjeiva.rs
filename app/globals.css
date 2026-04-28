@@ -36,15 +36,19 @@ body {
   text-rendering: optimizeLegibility;
   position: relative;
   min-height: 100vh;
+  overflow-x: hidden;
+  isolation: isolate;
 }
 
 body::before,
 body::after {
   content: '';
-  position: fixed;
+  position: absolute;
   inset: 0;
   pointer-events: none;
   z-index: -1;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 body::before {
@@ -71,7 +75,10 @@ a:hover {
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 h1,
