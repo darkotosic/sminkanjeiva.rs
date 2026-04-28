@@ -2,8 +2,8 @@ export const site = {
   brandName: 'Atelje Iva',
   city: 'Ruma',
   phone: '+38162462004',
-  email: 'booking@atelje-iva.rs',
-  instagramUrl: 'https://instagram.com/ateljeiva',
+  email: 'iva.kosanovic1@gmail.com',
+  instagramUrl: 'https://www.instagram.com/makeupiva_?igsh=MWJjaTZhdG40emRoeA%3D%3D&utm_source=qr',
   address: 'Ruma (centralna lokacija) • rad na terenu u Beogradu i Novom Sadu',
   workingHours: 'Pon–Sub 08:00–20:00, nedeljom po dogovoru',
   heroHeadline:
