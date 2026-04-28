@@ -2,6 +2,7 @@ import { Service } from '@/data/services';
 import { Button } from '@/components/ui/button';
 import { FaqItem } from '@/components/ui/faq-item';
 import { PageHero } from '@/components/sections/page-hero';
+import { AnimatedNumberText } from '@/components/ui/animated-number-text';
 
 export function ServiceDetailTemplate({ service }: { service: Service }) {
   return (
@@ -10,7 +11,7 @@ export function ServiceDetailTemplate({ service }: { service: Service }) {
       <section className="section" style={{ paddingTop: '1rem' }}>
         <div className="container grid grid-2">
           <div className="card"><h2>Za koga je usluga</h2><p>{service.whoItIsFor}</p></div>
-          <div className="card"><h2>Trajanje i cena</h2><p>{service.duration}</p><p><strong>{service.priceLabel}</strong></p></div>
+          <div className="card"><h2>Trajanje i cena</h2><p><AnimatedNumberText text={service.duration} /></p><p><strong><AnimatedNumberText text={service.priceLabel} /></strong></p></div>
           <div className="card"><h2>Šta je uključeno</h2><ul>{service.includes.map((item) => <li key={item}>{item}</li>)}</ul></div>
           <div className="card"><h2>Priprema pre termina</h2><ul>{service.prepNotes.map((item) => <li key={item}>{item}</li>)}</ul></div>
         </div>
