@@ -1,5 +1,6 @@
 import { Service } from '@/data/services';
 import { Button } from '@/components/ui/button';
+import { AnimatedNumberText } from '@/components/ui/animated-number-text';
 
 export function ServiceCard({ service }: { service: Service }) {
   return (
@@ -7,7 +8,7 @@ export function ServiceCard({ service }: { service: Service }) {
       <h3>{service.title}</h3>
       <p style={{ color: 'var(--muted)' }}>{service.shortDescription}</p>
       <p style={{ marginBottom: '1.1rem' }}>
-        <strong>{service.priceLabel}</strong>
+        <strong><AnimatedNumberText text={service.priceLabel} /></strong>
       </p>
       <Button href={`/usluge/${service.slug}`} variant="secondary">
         Saznaj više
