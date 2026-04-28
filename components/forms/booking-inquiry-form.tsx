@@ -14,21 +14,15 @@ export function BookingInquiryForm() {
 
     const form = event.currentTarget;
     const formData = new FormData(form);
-    const encodedBody = new URLSearchParams();
-
-    formData.forEach((value, key) => {
-      if (typeof value === 'string') {
-        encodedBody.append(key, value);
-      }
-    });
+    const payload = new FormData();
+    formData.forEach((value, key) => payload.append(key, value));
+    payload.append('_subject', 'Novi upit sa sajta sminkanjeiva.rs');
+    payload.append('_captcha', 'false');
 
     try {
-      const response = await fetch('/__forms.html', {
+      const response = await fetch(`https://formsubmit.co/${site.email}`, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: encodedBody.toString(),
+        body: payload,
       });
 
       if (!response.ok) {

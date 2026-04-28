@@ -1,3 +1,4 @@
+import { site } from '@/data/site';
 import { Button } from '@/components/ui/button';
 
 export function BookingCta() {
@@ -9,7 +10,7 @@ export function BookingCta() {
         <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
           <Button href="/kontakt">Zakaži termin</Button>
           <Button href="/kontakt" variant="secondary">Pošalji upit</Button>
-          <Button href="https://instagram.com/ateljeiva" variant="ghost">Instagram</Button>
+          <Button href={site.instagramUrl} variant="ghost">Instagram</Button>
         </div>
       </div>
     </section>
