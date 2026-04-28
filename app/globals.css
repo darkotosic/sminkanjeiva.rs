@@ -21,6 +21,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
@@ -36,19 +37,20 @@ body {
   text-rendering: optimizeLegibility;
   position: relative;
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow-x: clip;
   isolation: isolate;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body::before,
 body::after {
   content: '';
-  position: absolute;
+  position: fixed;
   inset: 0;
   pointer-events: none;
   z-index: -1;
-  transform: translateZ(0);
-  backface-visibility: hidden;
+  will-change: opacity;
 }
 
 body::before {
@@ -77,8 +79,6 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  transform: translateZ(0);
-  backface-visibility: hidden;
 }
 
 h1,
@@ -218,6 +218,7 @@ p {
   position: sticky;
   top: 0;
   z-index: 20;
+  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   background: rgba(19, 14, 29, 0.82);
   border-bottom: 1px solid var(--border);
@@ -385,6 +386,39 @@ p {
 
   .button {
     transition: none;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  body::before {
+    filter: blur(10px);
+    opacity: 0.72;
+  }
+
+  body::after {
+    mix-blend-mode: normal;
+    opacity: 0.36;
+  }
+
+  .site-header {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+  }
+
+  .card {
+    backdrop-filter: blur(4px);
+  }
+}
+
+@supports (-webkit-touch-callout: none) {
+  html,
+  body {
+    min-height: -webkit-fill-available;
+  }
+
+  .site-header {
+    transform: translateZ(0);
+    will-change: transform;
   }
 }
 
