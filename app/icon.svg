@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Neon pink heart favicon">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#2b1438" />
+      <stop offset="100%" stop-color="#120b1b" />
+    </radialGradient>
+    <linearGradient id="heart" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff8ad0" />
+      <stop offset="55%" stop-color="#ff4fb3" />
+      <stop offset="100%" stop-color="#ff2f9e" />
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#ff5bbb" flood-opacity="0.85" />
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#ffc5e8" flood-opacity="0.85" />
+    </filter>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#bg)" />
+  <path
+    d="M64 106C63 105 60 103 56 100C39 87 24 75 24 56C24 43 34 33 47 33C55 33 61 37 64 43C67 37 73 33 81 33C94 33 104 43 104 56C104 75 89 87 72 100C68 103 65 105 64 106Z"
+    fill="url(#heart)"
+    filter="url(#glow)"
+  />
+</svg>
