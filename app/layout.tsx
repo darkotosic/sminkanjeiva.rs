@@ -26,9 +26,12 @@ export const metadata: Metadata = {
   },
 
   icons: {
-    icon: '/icon.svg',
-    shortcut: '/icon.svg',
-    apple: '/icon.svg',
+    icon: [
+      { url: '/favicon.ico', type: 'image/x-icon' },
+      { url: '/icon.svg', type: 'image/svg+xml' },
+    ],
+    shortcut: ['/favicon.ico'],
+    apple: [{ url: '/neon-pink-heart-favicon.png', sizes: '180x180', type: 'image/png' }],
   },
   openGraph: {
     title: `${site.brandName} | Profesionalna šminka u ${site.city}`,
