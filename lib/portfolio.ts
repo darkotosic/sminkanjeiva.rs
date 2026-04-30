@@ -12,6 +12,14 @@ function toTitle(folderName: string) {
     .join(' ');
 }
 
+function normalizeCategory(folderName: string) {
+  if (folderName === 'film_sfx_makeup') {
+    return 'face_paint';
+  }
+
+  return folderName;
+}
+
 export type PortfolioItem = {
   image: string;
   alt: string;
@@ -31,7 +39,8 @@ export async function getPortfolioItems(): Promise<PortfolioItem[]> {
   const byFolder = await Promise.all(
     folders.map(async (folderName) => {
       const files = await readdir(path.join(PHOTOS_ROOT, folderName), { withFileTypes: true });
-      const title = toTitle(folderName);
+      const categoryKey = normalizeCategory(folderName);
+      const title = toTitle(categoryKey);
 
       return files
         .filter((file) => file.isFile() && IMAGE_EXTENSIONS.has(path.extname(file.name).toLowerCase()))
