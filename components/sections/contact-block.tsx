@@ -9,7 +9,8 @@ export function ContactBlock() {
         <SectionHeading title="Kontakt i zakazivanje" subtitle="Za dostupnost termina, cenu i dodatne informacije pošaljite poruku ili pozovite direktno." />
         <p>Telefon: {site.phone}</p>
         <p>Email: {site.email}</p>
-        <p>Instagram: {site.instagramUrl}</p>
+        <p>Instagram:</p>
+        <Button href={site.instagramUrl} variant="ghost">Zapratite nas na Instagramu</Button>
         <p>Lokacija: {site.address}</p>
         <p>Radno vreme: {site.workingHours}</p>
         <Button href="/kontakt">Pošalji upit</Button>
