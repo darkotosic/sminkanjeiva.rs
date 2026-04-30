@@ -5,14 +5,16 @@ export const sitemapRoutes = {
   education: ['/edukacije', '/edukacije/individualna-obuka', '/edukacije/kurs-sminkanja', '/edukacije/masterclass', '/edukacije/online-kurs'],
   marketingSeo: [
     '/blog',
-    '/blog/[slug]',
-    '/sminka-za-mlade-[grad]',
-    '/profesionalni-sminker-[grad]',
-    '/svadbena-sminka-[grad]',
     '/sminkanje-ruma',
     '/sminkanje-beograd',
     '/sminkanje-novi-sad',
     '/sminkanje-za-vencanje',
     '/sminkanje-za-decije-rodjendane',
   ],
+};
+
+export const programmaticSeoRoutes = {
+  bridalByCity: ['beograd', 'novi-sad', 'ruma'],
+  proMuaByCity: ['beograd', 'novi-sad', 'ruma'],
+  weddingByCity: ['beograd', 'novi-sad', 'ruma'],
 };
