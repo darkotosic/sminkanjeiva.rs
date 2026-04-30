@@ -5,11 +5,78 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
+# Canonical domain: https://sminkanjeiva.rs
+# Google Search favicons are handled per hostname, so www/non-www must not split signals.
+
 [[redirects]]
-  from = "http://atelje-iva.rs/*"
-  to = "https://www.atelje-iva.rs/:splat"
+  from = "https://www.sminkanjeiva.rs/*"
+  to = "https://sminkanjeiva.rs/:splat"
   status = 301
   force = true
+
+[[redirects]]
+  from = "http://www.sminkanjeiva.rs/*"
+  to = "https://sminkanjeiva.rs/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://sminkanjeiva.rs/*"
+  to = "https://sminkanjeiva.rs/:splat"
+  status = 301
+  force = true
+
+# Optional old-domain redirects if these domains are connected to the same Netlify site.
+# If atelje-iva.rs is not connected in Netlify domain settings, these rules are harmless.
+
+[[redirects]]
+  from = "https://atelje-iva.rs/*"
+  to = "https://sminkanjeiva.rs/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://atelje-iva.rs/*"
+  to = "https://sminkanjeiva.rs/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.atelje-iva.rs/*"
+  to = "https://sminkanjeiva.rs/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.atelje-iva.rs/*"
+  to = "https://sminkanjeiva.rs/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/favicon-96x96.png"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+    X-Robots-Tag = "all"
+
+[[headers]]
+  for = "/favicon.ico"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+    X-Robots-Tag = "all"
+
+[[headers]]
+  for = "/apple-touch-icon.png"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+    X-Robots-Tag = "all"
+
+[[headers]]
+  for = "/manifest.webmanifest"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+    Content-Type = "application/manifest+json; charset=utf-8"
+    X-Robots-Tag = "all"
 
 [[headers]]
   for = "/*"

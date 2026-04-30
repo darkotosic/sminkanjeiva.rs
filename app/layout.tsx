@@ -13,6 +13,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.canonicalDomain),
+  manifest: '/manifest.webmanifest',
   title: {
     default: `${site.brandName} | Profesionalna šminka u ${site.city}`,
     template: `%s | ${site.brandName}`,
@@ -49,14 +50,21 @@ export const metadata: Metadata = {
       'max-video-preview': -1,
     },
   },
-
   icons: {
     icon: [
-      { url: '/favicon.ico', type: 'image/x-icon' },
-      { url: '/icon.svg', type: 'image/svg+xml' },
+      {
+        url: '/favicon-96x96.png',
+        sizes: '96x96',
+        type: 'image/png',
+      },
     ],
-    shortcut: ['/favicon.ico'],
-    apple: [{ url: '/neon-pink-heart-favicon.png', sizes: '180x180', type: 'image/png' }],
+    apple: [
+      {
+        url: '/apple-touch-icon.png',
+        sizes: '180x180',
+        type: 'image/png',
+      },
+    ],
   },
   openGraph: {
     title: `${site.brandName} | Profesionalna šminka u ${site.city}`,
