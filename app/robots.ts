@@ -10,6 +10,6 @@ export default function robots(): MetadataRoute.Robots {
       },
     ],
     sitemap: `${site.canonicalDomain}/sitemap.xml`,
-    host: site.canonicalDomain,
+    host: new URL(site.canonicalDomain).host,
   };
 }
