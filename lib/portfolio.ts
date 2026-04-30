@@ -56,3 +56,29 @@ export async function getPortfolioItems(): Promise<PortfolioItem[]> {
 
   return byFolder.flat();
 }
+
+export async function getPortfolioItemsByFolders(folderNames: string[]): Promise<PortfolioItem[]> {
+  if (!folderNames.length) {
+    return [];
+  }
+
+  const byFolder = await Promise.all(
+    folderNames.map(async (folderName) => {
+      const files = await readdir(path.join(PHOTOS_ROOT, folderName), { withFileTypes: true });
+      const categoryKey = normalizeCategory(folderName);
+      const title = toTitle(categoryKey);
+
+      return files
+        .filter((file) => file.isFile() && IMAGE_EXTENSIONS.has(path.extname(file.name).toLowerCase()))
+        .map((file, index) => ({
+          image: `/api/photos/${folderName}/${encodeURIComponent(file.name)}`,
+          alt: `${title} look ${index + 1}`,
+          category: title,
+          title,
+          featured: index < 4,
+        }));
+    })
+  );
+
+  return byFolder.flat();
+}
