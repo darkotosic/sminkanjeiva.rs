@@ -1,10 +1,15 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import { site } from '@/data/site';
 import { SiteHeader } from '@/components/layout/site-header';
 import { SiteFooter } from '@/components/layout/site-footer';
 import { MobileStickyCta } from '@/components/layout/mobile-sticky-cta';
 import { JsonLd } from '@/components/seo/json-ld';
+
+export const viewport: Viewport = {
+  themeColor: '#120f18',
+  colorScheme: 'dark',
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.canonicalDomain),
@@ -27,6 +32,11 @@ export const metadata: Metadata = {
       sr: '/',
       'x-default': '/',
     },
+  },
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
   },
   robots: {
     index: true,
