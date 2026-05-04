@@ -1,15 +1,15 @@
 export const site = {
-  brandName: 'Atelje Iva',
+  brandName: 'Šminkanje Iva',
   city: 'Ruma',
   phone: '+38162462004',
   email: 'iva.kosanovic1@gmail.com',
   instagramUrl: 'https://www.instagram.com/makeupiva_?igsh=MWJjaTZhdG40emRoeA%3D%3D&utm_source=qr',
-  address: 'Ruma (centralna lokacija) • rad na terenu u Beogradu i Novom Sadu',
-  workingHours: 'Pon–Sub 08:00–20:00, nedeljom po dogovoru',
+  address: 'Ruma i okolina',
+  workingHours: 'Pon–Pet 17:00–20:00, Sub–Ned 08:00–20:00',
   heroHeadline:
-    'Atelje Iva — profesionalna šminka u Rumi, sa radom na terenu u Beogradu i Novom Sadu',
+    'ŠMINKANJE IVA',
   heroText:
-    'Kreiramo pažljivo prilagođene makeup look-ove koji traju, izgledaju besprekorno na fotografijama i prate vaš stil, ten i energiju događaja.',
+    'Glam šminka, oslikavanje lica i specijalni efekti u studiju u Rumi i okolini.',
   bookingUrl: '/kontakt',
   contactPath: '/kontakt',
   canonicalDomain: 'https://sminkanjeiva.rs',

@@ -13,10 +13,6 @@ function toTitle(folderName: string) {
 }
 
 function normalizeCategory(folderName: string) {
-  if (folderName === 'film_sfx_makeup') {
-    return 'face_paint';
-  }
-
   return folderName;
 }
 

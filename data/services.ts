@@ -17,14 +17,14 @@ export type Service = {
 export const services: Service[] = [
   {
     slug: 'sminka-za-mlade',
-    title: 'Šminka za mlade',
+    title: 'Glam (studijsko)',
     shortDescription:
       'Pouzdana, dugotrajna i elegantna bridal šminka koja izgleda besprekorno uživo i na fotografijama tokom celog dana.',
     fullIntro: 'Bridal usluga sa detaljnom pripremom tena i fokusom na camera-ready finish.',
     whoItIsFor: 'Za mlade koje žele siguran rezultat bez stresa na dan venčanja.',
     includes: ['Konsultacija', 'Priprema kože', 'Fiksiranje dugotrajnih slojeva'],
     duration: '90 minuta',
-    priceLabel: 'od 120€',
+    priceLabel: '3000 RSD / terensko na upit',
     prepNotes: ['Dođite bez jake SPF zaštite.', 'Poželjno je uraditi probni termin.'],
     faq: [{ question: 'Da li je probna šminka obavezna?', answer: 'Nije obavezna, ali je preporučena.' }],
     heroImage: '/images/service-bridal.jpg',
@@ -33,14 +33,14 @@ export const services: Service[] = [
   },
   {
     slug: 'svecana-sminka',
-    title: 'Svečana šminka',
+    title: 'Face paint (Ruma)',
     shortDescription:
       'Makeup za proslave, rođendane, gala događaje i posebne prilike, prilagođen vašem stilu i tipu lica.',
     fullIntro: 'Elegantni look-ovi planirani prema garderobi, osvetljenju i trajanju događaja.',
     whoItIsFor: 'Za klijentkinje koje žele sofisticiran i postojan izgled.',
     includes: ['Analiza lica', 'Korekcije i konture', 'Završno fiksiranje'],
     duration: '75 minuta',
-    priceLabel: 'od 70€',
+    priceLabel: '4000 RSD / terensko van Rume na upit',
     prepNotes: ['Ponesite referentnu fotografiju haljine.', 'Poželjno je doći 10 minuta ranije.'],
     faq: [{ question: 'Da li radite rane jutarnje termine?', answer: 'Da, uz prethodnu rezervaciju.' }],
     heroImage: '/images/service-event.jpg',
@@ -49,14 +49,14 @@ export const services: Service[] = [
   },
   {
     slug: 'matura-i-proslava',
-    title: 'Matura i proslave',
+    title: 'Specijalni efekti',
     shortDescription:
       'Moderni i postojani look-ovi za maturu, apsolventsko veče i sve trenutke kada želite siguran i sređen finalni izgled.',
     fullIntro: 'Savremen makeup sa balansom između trendova i prirodne harmonije lica.',
     whoItIsFor: 'Za maturantkinje i klijentkinje koje žele dugotrajnu svečanu šminku.',
     includes: ['Definisanje željenog stila', 'Personalizovana tehnika', 'Final check'],
     duration: '60 minuta',
-    priceLabel: 'od 55€',
+    priceLabel: 'na upit',
     prepNotes: ['Nega kože noć pre termina.', 'Izbegavati nove tretmane 48h pre termina.'],
     faq: [{ question: 'Da li je moguće grupno zakazivanje?', answer: 'Da, uz raniju rezervaciju.' }],
     heroImage: '/images/service-prom.jpg',
@@ -65,14 +65,14 @@ export const services: Service[] = [
   },
   {
     slug: 'studijska-sminka',
-    title: 'Studijska šminka',
+    title: 'Glam (snimanja)',
     shortDescription:
       'Precizno izvedena šminka za fotografisanja, kampanje, snimanja i sadržaj koji traži čist i profesionalan finish.',
     fullIntro: 'Tehnički precizna usluga za foto/video produkciju i kampanje.',
     whoItIsFor: 'Za brendove, kreatore sadržaja i privatne klijentkinje pred snimanje.',
     includes: ['Produkcijski brief', 'Foto-video prilagođavanje', 'Set-ready završnica'],
     duration: '90 minuta',
-    priceLabel: 'cena na upit',
+    priceLabel: 'na upit',
     prepNotes: ['Pošaljite moodboard unapred.', 'Potvrda termina 24h ranije.'],
     faq: [{ question: 'Da li ste dostupni na lokaciji snimanja?', answer: 'Da, uz dogovor i plan produkcije.' }],
     heroImage: '/images/service-studio.jpg',
