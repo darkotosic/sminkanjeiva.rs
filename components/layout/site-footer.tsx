@@ -32,7 +32,7 @@ export function SiteFooter() {
           </section>
         </div>
         <small className="site-footer-copy">
-          © {new Date().getFullYear()} {site.brandName}. Sva prava zadržana. Credits created by{' '}
+          © {new Date().getFullYear()} {site.brandName}. Sva prava zadržana. Created by{' '}
           <a
             href="https://digitalnafabrika.rs"
             className="site-footer-link"
