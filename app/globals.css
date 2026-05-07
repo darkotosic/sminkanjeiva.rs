@@ -472,3 +472,203 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+
+.eyebrow {
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.82rem;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
+.hero-landing {
+  min-height: clamp(520px, 72vh, 760px);
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-landing-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(15, 13, 13, 0.5), rgba(15, 13, 13, 0.92)),
+    radial-gradient(circle at 50% 45%, rgba(183, 110, 121, 0.32), transparent 36%),
+    url('/api/photos/glam_makeup/IMG_7843.jpg') center 34% / cover;
+  transform: scale(1.02);
+  filter: saturate(0.9) contrast(1.05);
+}
+
+.hero-landing-content {
+  position: relative;
+  text-align: center;
+  padding: clamp(4rem, 9vw, 7rem) 0;
+}
+
+.hero-landing h1 {
+  font-size: clamp(3rem, 9vw, 6.8rem);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  text-shadow: 0 18px 58px rgba(0, 0, 0, 0.75), 0 0 28px rgba(255, 106, 184, 0.32);
+}
+
+.hero-lead {
+  color: var(--foreground);
+  max-width: 760px;
+  margin: 0 auto 0.9rem;
+  font-size: clamp(1.02rem, 2vw, 1.25rem);
+}
+
+.hero-services {
+  color: var(--muted);
+  margin-bottom: 1.35rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section-bordered {
+  border-bottom: 1px solid var(--border);
+}
+
+.home-service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.home-service-card {
+  min-height: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--surface);
+  box-shadow: var(--shadow-deep), var(--shadow-soft);
+}
+
+.home-service-card a {
+  display: grid;
+  height: 100%;
+}
+
+.home-service-card a:hover {
+  text-decoration: none;
+}
+
+.home-service-card-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.home-service-card-body {
+  padding: 1.15rem;
+}
+
+.home-service-card-body h2 {
+  font-size: clamp(1.35rem, 2.2vw, 1.9rem);
+}
+
+.home-service-card-body p {
+  color: var(--muted);
+}
+
+.home-service-card-body span {
+  color: var(--foreground);
+  font-weight: 700;
+}
+
+.about-preview-grid {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: clamp(1.2rem, 4vw, 3rem);
+  align-items: center;
+}
+
+.about-mark {
+  width: 132px;
+  height: 132px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 4rem;
+  color: var(--accent);
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: var(--shadow-soft);
+}
+
+.feature-card {
+  min-height: 100%;
+}
+
+.feature-icon {
+  width: 42px;
+  height: 42px;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--accent);
+  margin-bottom: 0.7rem;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.feature-card p,
+.portfolio-style-card p,
+.portfolio-intro-card p {
+  color: var(--muted);
+}
+
+.portfolio-story {
+  scroll-margin-top: 90px;
+}
+
+.portfolio-intro-card {
+  margin-bottom: 1rem;
+}
+
+.portfolio-style-grid {
+  margin-bottom: 2rem;
+}
+
+.filter-chip {
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--foreground);
+  padding: 0.45rem 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.filter-chip-active {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .home-service-grid,
+  .about-preview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-mark {
+    width: 96px;
+    height: 96px;
+    font-size: 3rem;
+  }
+
+  .hero-landing h1 {
+    letter-spacing: 0.08em;
+  }
+}
