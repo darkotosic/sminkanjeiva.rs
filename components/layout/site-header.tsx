@@ -22,7 +22,7 @@ export function SiteHeader() {
             </Link>
           ))}
           <LanguageToggle />
-          <Button href={site.bookingUrl}>Zakaži termin</Button>
+          <Button href={`tel:${site.phone}`}>POZOVITE</Button>
         </nav>
       </div>
     </header>
