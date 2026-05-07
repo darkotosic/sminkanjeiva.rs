@@ -40,15 +40,7 @@ export function PortfolioGrid({ items }: PortfolioGridProps) {
             key={category}
             type="button"
             onClick={() => setActiveCategory(category)}
-            style={{
-              borderRadius: '999px',
-              border: activeCategory === category ? '1px solid var(--brand)' : '1px solid var(--line)',
-              background: activeCategory === category ? 'var(--brand)' : 'transparent',
-              color: activeCategory === category ? '#fff' : 'var(--text)',
-              padding: '0.45rem 0.85rem',
-              fontWeight: 600,
-              cursor: 'pointer',
-            }}
+            className={activeCategory === category ? 'filter-chip filter-chip-active' : 'filter-chip'}
           >
             {category}
           </button>

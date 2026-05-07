@@ -5,8 +5,17 @@ const PHOTOS_ROOT = path.join(process.cwd(), 'components', 'photos');
 
 const IMAGE_EXTENSIONS = new Set(['.jpg', '.jpeg', '.png', '.webp', '.avif']);
 
+const CATEGORY_TITLES: Record<string, string> = {
+  bridal_makeup: 'Bridal',
+  colorful_makeup: 'Colorful makeup',
+  face_paint: 'Oslikavanje lica',
+  film_sfx_makeup: 'Specijalni efekti',
+  glam_makeup: 'Glam',
+  natural_glam_makeup: 'Natural glam',
+};
+
 function toTitle(folderName: string) {
-  return folderName
+  return CATEGORY_TITLES[folderName] ?? folderName
     .split('_')
     .map((token) => token.charAt(0).toUpperCase() + token.slice(1))
     .join(' ');

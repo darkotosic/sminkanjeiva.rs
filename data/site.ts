@@ -9,7 +9,7 @@ export const site = {
   heroHeadline:
     'ŠMINKANJE IVA',
   heroText:
-    'Glam šminka, oslikavanje lica i specijalni efekti u studiju u Rumi i okolini.',
+    'Glam šminka, oslikavanje lica i specijalni efekti — u studiju u Rumi ili na terenu.',
   bookingUrl: '/kontakt',
   contactPath: '/kontakt',
   canonicalDomain: 'https://sminkanjeiva.rs',
