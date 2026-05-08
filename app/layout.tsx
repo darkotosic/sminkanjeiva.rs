@@ -3,7 +3,6 @@ import './globals.css';
 import { site } from '@/data/site';
 import { SiteHeader } from '@/components/layout/site-header';
 import { SiteFooter } from '@/components/layout/site-footer';
-import { MobileStickyCta } from '@/components/layout/mobile-sticky-cta';
 import { JsonLd } from '@/components/seo/json-ld';
 
 export const viewport: Viewport = {
@@ -140,7 +139,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SiteHeader />
         <main id="main-content">{children}</main>
         <SiteFooter />
-        <MobileStickyCta />
       </body>
     </html>
   );
