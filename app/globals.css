@@ -393,24 +393,6 @@ p {
   font-weight: 600;
 }
 
-.mobile-cta {
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
-  right: 10px;
-  z-index: 30;
-  display: flex;
-  justify-content: center;
-}
-
-.mobile-cta-inner {
-  background: rgba(22, 16, 34, 0.9);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 0.28rem;
-  box-shadow: var(--shadow-deep), var(--shadow-soft);
-}
-
 @media (min-width: 768px) {
   .grid-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -422,10 +404,6 @@ p {
 
   .grid-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .mobile-cta {
-    display: none;
   }
 }
 
