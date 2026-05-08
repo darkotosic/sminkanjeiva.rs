@@ -305,6 +305,52 @@ p {
   text-shadow: 0 0 16px rgba(255, 106, 184, 0.28);
 }
 
+.site-footer-credit-link {
+  display: inline-block;
+  color: #76d8ff;
+  font-size: 2em;
+  font-weight: 800;
+  line-height: 1;
+  background: linear-gradient(
+    110deg,
+    #56c7ff 0%,
+    #a9efff 22%,
+    #ffffff 34%,
+    #76d8ff 46%,
+    #2aa7ff 68%,
+    #bdf5ff 100%
+  );
+  background-size: 240% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow:
+    0 0 12px rgba(86, 199, 255, 0.45),
+    0 0 26px rgba(118, 216, 255, 0.28);
+  animation: footer-credit-shimmer 2.4s ease-in-out infinite;
+}
+
+.site-footer-credit-link:hover {
+  text-decoration: none;
+  filter: drop-shadow(0 0 10px rgba(118, 216, 255, 0.55));
+}
+
+@keyframes footer-credit-shimmer {
+  0% {
+    background-position: 140% 50%;
+  }
+
+  100% {
+    background-position: -140% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-footer-credit-link {
+    animation: none;
+  }
+}
+
 .site-footer-copy {
   margin-top: 1.4rem;
   display: block;

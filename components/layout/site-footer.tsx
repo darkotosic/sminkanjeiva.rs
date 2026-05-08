@@ -35,7 +35,7 @@ export function SiteFooter() {
           © {new Date().getFullYear()} {site.brandName}. Sva prava zadržana. Created by{' '}
           <a
             href="https://digitalnafabrika.rs"
-            className="site-footer-link"
+            className="site-footer-credit-link"
             target="_blank"
             rel="noopener noreferrer"
           >
