@@ -521,7 +521,7 @@ body {
   background:
     linear-gradient(180deg, rgba(15, 13, 13, 0.5), rgba(15, 13, 13, 0.92)),
     radial-gradient(circle at 50% 45%, rgba(183, 110, 121, 0.32), transparent 36%),
-    url('/api/photos/glam_makeup/IMG_7843.jpg') center 34% / cover;
+    url('/api/photos/90FDD9AA-7A11-4C95-9ACA-F5C2370CFB4D.jpeg') center 34% / cover;
   transform: scale(1.02);
   filter: saturate(0.9) contrast(1.05);
 }
