@@ -2,18 +2,18 @@ import { PageHero } from '@/components/sections/page-hero';
 import { faqItems } from '@/data/faq';
 import { site } from '@/data/site';
 import { FaqItem } from '@/components/ui/faq-item';
-import { BookingInquiryForm } from '@/components/forms/booking-inquiry-form';
+import { Button } from '@/components/ui/button';
 
 export const metadata = {
   title: 'Kontakt i zakazivanje',
-  description: 'Kontaktirajte nas za dostupnost termina, cenu i preporuku usluge.',
+  description: 'Pozovite nas direktno za dostupnost termina, cenu i preporuku usluge.',
   alternates: { canonical: '/kontakt' },
 };
 
 export default function KontaktPage() {
   return (
     <>
-      <PageHero title="Kontakt" intro="Pošaljite upit za termin i dobijte brzu preporuku usluge i dostupnosti." />
+      <PageHero title="Kontakt" intro="Pozovite nas direktno za termin, preporuku usluge i proveru dostupnosti." />
       <section className="section">
         <div className="container grid grid-2">
           <div className="card">
@@ -25,8 +25,10 @@ export default function KontaktPage() {
             <p><a href="https://maps.google.com" target="_blank">Otvori mapu</a></p>
           </div>
           <div className="card">
-            <h2>Booking / inquiry forma</h2>
-            <BookingInquiryForm />
+            <p className="eyebrow">Enterprise grade kontakt</p>
+            <h2>Bez popunjavanja forme</h2>
+            <p>Za najbrži dogovor oko termina i usluge, pozovite nas jednim klikom.</p>
+            <Button href={`tel:${site.phone}`}>POZOVITE</Button>
           </div>
         </div>
       </section>
