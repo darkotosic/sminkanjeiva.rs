@@ -25,8 +25,6 @@ export default function KontaktPage() {
             <p><a href="https://maps.google.com" target="_blank">Otvori mapu</a></p>
           </div>
           <div className="card">
-            <p className="eyebrow">Enterprise grade kontakt</p>
-            <h2>Bez popunjavanja forme</h2>
             <p>Za najbrži dogovor oko termina i usluge, pozovite nas jednim klikom.</p>
             <Button href={`tel:${site.phone}`}>POZOVITE</Button>
           </div>
