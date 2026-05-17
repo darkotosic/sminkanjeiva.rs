@@ -10,7 +10,7 @@ export async function GET(
 ) {
   const { path: photoPath } = await params;
 
-  if (!photoPath || photoPath.length < 2) {
+  if (!photoPath || photoPath.length < 1) {
     return NextResponse.json({ error: 'Photo path is invalid.' }, { status: 400 });
   }
 
