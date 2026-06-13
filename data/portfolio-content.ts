@@ -17,7 +17,7 @@ export const portfolioOverview = [
     title: 'Specijalni efekti',
     description: 'SFX i filmska šminka za potrebe snimanja i transformacije.',
     href: '/portfolio#specijalni-efekti',
-    image: '/api/photos/film_sfx_makeup/481F3180-13B8-4F98-9D42-DBCC826EAB6B.jpg',
+    image: '/api/photos/film_sfx_makeup/movie3.jpeg',
     alt: 'Specijalni efekti i filmska šminka',
   },
 ];
