@@ -8,6 +8,7 @@ export function PriceList() {
       {services.filter((service) => service.active).map((service) => (
         <p key={service.slug}><strong>{service.title}</strong>: <AnimatedNumberText text={service.priceLabel} /></p>
       ))}
+      <p><strong>Filmska šminka</strong>: na upit</p>
       <p style={{ color: 'var(--muted)' }}>Cene mogu zavisiti od izlaska na teren, broja osoba i specifičnog paketa.</p>
     </div>
   );
